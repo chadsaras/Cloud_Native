@@ -1,0 +1,43 @@
+                    ┌──────────────────┐
+                    │   Client/User    │
+                    └────────┬─────────┘
+                             │
+                             ▼
+                    ┌──────────────────┐
+                    │   Cloud App      │
+                    │ Docker/K8s       │
+                    └────────┬─────────┘
+                             │
+                        Application
+                           Logs
+                             │
+                             ▼
+                    ┌──────────────────┐
+                    │  Elastic Agent   │
+                    └────────┬─────────┘
+                             │
+                             ▼
+                    ┌──────────────────┐
+                    │    Logstash      │
+                    │                  │
+                    │ Parse / Filter   │
+                    │ Enrich / Route   │
+                    └────────┬─────────┘
+                             │
+                             ▼
+                 ┌───────────────────────┐
+                 │    Elasticsearch      │
+                 │                       │
+                 │ Index + Search +      │
+                 │ Analytics             │
+                 └───────────┬───────────┘
+                             │
+                             ▼
+                 ┌───────────────────────┐
+                 │       Kibana          │
+                 │                       │
+                 │ Dashboards            │
+                 │ Queries               │
+                 │ Alerts                │
+                 │ Security Analytics    │
+                 └───────────────────────┘
